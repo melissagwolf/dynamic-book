@@ -1,6 +1,6 @@
 --- 
 title: "DFI Cutoffs: A Tutorial"
-author: ["Melissa G Wolf", "Dan McNeish"]
+author: ["Melissa G Wolf", "Daniel McNeish"]
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
