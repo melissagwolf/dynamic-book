@@ -1,15 +1,19 @@
 --- 
-title: "DFI Cutoffs: A Tutorial"
-author: ["Melissa G Wolf", "Daniel McNeish"]
+title: 'DFI Cutoffs: A Tutorial'
+author:
+- Melissa G Wolf
+- Daniel McNeish
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [references.bib,packages.bib]
+bibliography:
+- references.bib
+- packages.bib
 biblio-style: apalike
 link-citations: yes
-github-repo: melissagwolf/dynamic-book
-description: "This book is a tutorial for users of www.dynamicfit.app."
-csl: apa-numeric-superscript.csl
+github-repo: "melissagwolf/dynamic-book"
+description: This book is a tutorial for users of www.dynamicfit.app.
+csl: "apa-numeric-superscript.csl"
 ---
 
 # Introduction {-}
