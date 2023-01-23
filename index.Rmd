@@ -1,0 +1,34 @@
+--- 
+title: "DFI Cutoffs: A Tutorial"
+author: ["Melissa G Wolf", "Dan McNeish"]
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [references.bib,packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: melissagwolf/dynamic-book
+description: "This book is a tutorial for users of www.dynamicfit.app."
+csl: apa-numeric-superscript.csl
+---
+
+# Introduction {-}
+
+<a href="https://www.dynamicfit.app">
+<img src="DFI.jpg" style="max-width:25%;min-width:40px;padding-left:25px;float:right;"/>
+</a>
+
+Confirmatory factor analysis (CFA) is a commonly used statistical method in the social sciences. Although these models have been used for over a century, debate remains about how to evaluate the fit of factor models. Recently, we proposed the use dynamic fit index (DFI) cutoffs to evaluate model fit [@mcneish_dynamic_2021; @mcneish_dynamic_2022] and introduced a corresponding Shiny application to facilitate their use [@wolf_dynamic_2020]. 
+
+This book was written as a tutorial for applied psychologists that are interested in using the [DFI Shiny App](www.dynamicfit.app) to compute model specific cutoffs for their CFA models. We wrote this to make DFI cutoffs more accessible to everyone, especially those that use SPSS Amos and Mplus.
+
+In this book, we will walk through 12 commonly asked questions about DFI cutoffs and use an applied example to demonstrate how to use the Shiny app to calculate them. For R users, DFI cutoffs are also available on `CRAN` under the package `dynamic` [@R-dynamic].
+
+```{r eval=FALSE}
+install.packages("dynamic")
+library(dynamic)
+```
+
+
+
+

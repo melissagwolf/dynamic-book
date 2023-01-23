@@ -1,0 +1,26 @@
+# How do I include DFI cutoffs in a manuscript? {#manuscript}
+
+In our experience, it is easiest to include DFI cutoffs in a manuscript by putting them in a table and then referencing the table in the text of the article. Researchers should report the fit of their model as they normally would, and then reference the likely magnitude of misspecification by comparing each approximate fit index to the table of DFI cutoff values. An example of a write up using the model from this tutorial is presented in the next section. Because tailored cutoffs (specifically, DFI cutoffs) are a relatively new development, it may be worthwhile to mention that they are used to quantify the degree of misfit in the model or include a sentence about the limitations of fixed cutoff values for readers who are not familiar with existing literature.
+
+In this tutorial, the model was substantially misspecified. When this happens, researchers may be interested in modifying the model to attempt to improve the fit (although, note that model modification is only potential resolution and modifications should not be made without strong theoretical justifications). It is not clear to us quite yet how to proceed with DFI cutoffs when using modifying the model (i.e., we are not sure if DFI cutoffs should be updated for the new model or not). This is discussed more in Chapter \@ref(limitations). We are currently working on resolving this conundrum so that we can make clear recommendations for researchers. 
+
+## Applied Example: Standard Reporting 
+
+The test of exact fit was statistically significant (${\chi}^2$ = 436.55, df = 35, $p$ < .001) indicating that the model did not exactly fit the data. The approximate fit indices for the model were SRMR = .048, RMSEA = .097 [90% CI (.089, .105)], and CFI = .921. These indices are essentially effect size measure for the magnitude of misfit. To quantify the degree of misfit reflected in these indices is, we compare the fit indices to a series of dynamic fit index (DFI) cutoffs [@mcneish_dynamic_2022] calculated by the one-factor DFI Shiny app version 1.1.0 [@wolf_dynamic_2020]. A table with the resulting cutoffs derived for this model are shown below. The SRMR and RMSEA from the model were above the Level-3 DFI cutoff and the CFI was below the Level-3 DFI cutoff, indicating that the fit of the model is consistent with a substantial misspecification.   
+
+```{r tab, echo=FALSE}
+mat <- matrix(data=c(.025,.040,.986,
+.037,.075,.953,
+.043,.095,.928),
+nrow=3,byrow=T,
+dimnames = list(
+  c("Level 1","Level 2","Level 3"),
+  c("SRMR","RMSEA","CFI")))
+
+knitr::kable(mat,
+             caption = 'The DFI cutoffs used to quantify the degree of misfit in the model.',
+             booktabs=T,
+             align="c") 
+
+```
+

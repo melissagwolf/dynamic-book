@@ -1,0 +1,25 @@
+bookdown::gitbook:
+  css: style.css
+  #split_bib: FALSE  #Removes references from the bottom of each page
+  config:
+    toc:
+      before: |
+        <li><a href="./">DFI Cutoffs: A Tutorial</a></li>
+      after: |
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+    edit: https://github.com/melissagwolf/dynamic-book/edit/BRANCH/%s
+    download: ["pdf", "epub"]
+    fontsettings:
+      family: serif
+      size: 1
+    sharing:
+      facebook: false
+      twitter: false
+      all: ['twitter', 'linkedin', 'github', 'whatsapp', 'weibo']
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: yes
+bookdown::epub_book: default
