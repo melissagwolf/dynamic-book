@@ -1,4 +1,4 @@
-This is the GitHub page for the DFI tutorial book
+This is the GitHub page for the DFI tutorial book: https://melissagwolf.github.io/dynamic-book/
 
 The DFI app can be accessed at www.dynamicfit.app
 
